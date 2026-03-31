@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment jsPsych</title>
+
+  <!-- Style sheet jsPsych -->
+  <link href="https://unpkg.com/jspsych@7.3.3/css/jspsych.css" rel="stylesheet">
+  <!-- Library jsPsych -->
+  <script src="https://unpkg.com/jspsych@8.0.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-preload@2.0.0"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-button-response"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-likert"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-fullscreen"></script>
+  <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.0"></script>
+
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #jspsych-target {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    /* Centrer les stimuli et images */
+    .jspsych-html-keyboard-response-stimulus,
+    .jspsych-html-button-response-stimulus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .jspsych-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .jspsych-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .jspsych-btn {
+      margin: 0 15px; /* espace horizontal entre les boutons */
+      padding: 10px 20px; /* augmente la taille des boutons */
+      font-size: 16px;   /* lisibilité */
+    }
+
+    /* Likert styles */
+    .jspsych-survey-likert-question {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .jspsych-survey-likert .jspsych-survey-likert-statement {
+      white-space: normal;
+    }
+
+    .jspsych-survey-likert-opts {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;   /* largeur fixe */
+      margin: 0 auto; /* centrer */
+    }
+
+    .jspsych-survey-likert-statement {
+      width: 600px;   /* même largeur que l'échelle */
+      margin: 0 auto 20px auto;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Conteneur jsPsych -->
+  <div id="jspsych-target"></div>
+
+  
+</body>
+</html>
+<!-- Script de l'expérience -->
+  <script src="script.js"></script>
